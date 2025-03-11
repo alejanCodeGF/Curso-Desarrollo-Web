@@ -1,14 +1,23 @@
-# Curso de CSS basico
+# Curso de CSS básico
 
-## Descripción
+## 📚 Curso
 
-Este proyecto contiene materiales y ejercicios prácticos de CSS.
+📌 **HTML** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-HTML)\
+🎨 **CSS** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-CSS)\
+💻 **JavaScript** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-JS)
 
-He adquirido las habilidades para poner estilos a el contenido web, y te lo resumo todo aquí. Desde cero hasta poder programar tu propia web.
+---
 
-Si lo veo necesario, lo iré editando a futuro para que esté lo más completo posible.
+## 👤 Sobre el Autor
 
-¡Espero que te sirva!
+**AlejanCodeGF**
+
+📎 [LinkedIn](https://www.linkedin.com/in/alejan-gomez-fernandez/)\
+🌐 [Portfolio Web](https://alejancodegf.github.io/Portfolio)
+
+✉️ **Contacto**: [alejan.gomez.fernandez@gmail.com](mailto\:alejan.gomez.fernandez@gmail.com)
+
+---
 
 ## Poner un comentario
 

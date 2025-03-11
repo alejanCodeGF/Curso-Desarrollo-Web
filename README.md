@@ -1,43 +1,49 @@
-# Curso-Desarrollo-Web
+# 🚀 Curso de Desarrollo Web
 
-## Descripción
+## 📌 Descripción
 
-He adquirido todos los conocimientos basicos de como maquetar una web (html), como añadir estilos (css), y como programar en JS, y te lo resumo en este curso/cheatsheet. Para gente que no tiene conocimientos previos como para la gente que sí.
+Bienvenido a este **curso/cheat sheet** de desarrollo web. Aquí encontrarás una guía estructurada sobre **HTML, CSS y JavaScript**, diseñada para ayudarte tanto si eres principiante en estos lenguajes como si ya tienes experiencia.
 
-Si lo veo necesario, lo iré editando a futuro para que esté lo más completo posible. Agradezco el feedback :-)
+📖 **Guía rápida**: El objetivo es contar con un recurso ágil y accesible para tener a mano en cualquier momento.
 
-¡Espero que te sirva!
+🛠️ **Objetivo**: Proporcionarte un recurso de consulta rápido y claro para mejorar tus habilidades de desarrollo web.
 
-## Cursos
-
-- [HTML](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-HTML)
-- [CSS](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-CSS)
-- [JS](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-JS)
-
-## Autor
-
-**AlejanCodeGF**
-
-- [Linkedin](https://www.linkedin.com/in/alejan-gomez-fernandez/)
-- [Portfolio web]()
-
-## Datos de contacto
-
-**alejan.gomez.fernandez@gmail.com**
-
-## Recursos utilizados
-
-Mucho del curso de CSS está recogido de **SoyDalto**, entre otros recursos online (muy recomendable ver el video)
-[**{Link del video}**](https://youtu.be/OWKXEJN67FE)
-
-Algunos conceptos los he rellenado con **The-Odin-project**, junto a la mayoria del curso de JS
-
-## Links interesantes
-
-[**{Link a un cheatsheet interactivo}**](https://htmlcheatsheet.com/)
-
-[**{Colores hexadecimales}**](https://htmlcolorcodes.com/)
+🔄 **Actualización constante**: Este contenido se irá mejorando con el tiempo. ¡Se agradece cualquier feedback! 😊
 
 ---
 
-`>` No sé si hace falta decirlo, pero obviamente lo que esté en el HTML, CSS y JS será público, así que no poner cosas privadas, vaya (ni en comentarios).
+## 📚 Contenido del Curso
+
+📌 **HTML** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-HTML)\
+🎨 **CSS** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-CSS)\
+💻 **JavaScript** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-JS)
+
+---
+
+## 👤 Sobre el Autor
+
+**AlejanCodeGF**
+
+📎 [LinkedIn](https://www.linkedin.com/in/alejan-gomez-fernandez/)\
+🌐 [Portfolio Web](https://alejancodegf.github.io/Portfolio)
+
+✉️ **Contacto**: [alejan.gomez.fernandez@gmail.com](mailto\:alejan.gomez.fernandez@gmail.com)
+
+---
+
+## 🔗 Recursos Utilizados
+
+📌 Gran parte del material de CSS se ha recopilado de **SoyDalto**. ¡Muy recomendable su contenido!\
+🎥 [Ver video recomendado](https://youtu.be/OWKXEJN67FE)
+
+📌 Algunos conceptos de JavaScript están basados en **The Odin Project**.
+
+---
+
+## 📌 Recursos Adicionales
+
+🔹 [Cheat Sheet interactivo de HTML, CSS y JS entre otros](https://htmlcheatsheet.com/)\
+
+---
+
+> Agradezco cualquier comentario o corrección que puedas tener. Muchas gracias. ✨

@@ -1,85 +1,66 @@
-# Curso de HTML basico
+# Curso de HTML básico
 
-## Descripción
+## 📚 Curso
 
-Este proyecto contiene materiales y ejercicios prácticos de HTML.
-
-He aprendido los fundamentos del lenguaje y he adquirido las habilidades para crear y estructurar contenido web, y te lo resumo aquí.
-
-Si lo veo necesario, lo iré editando a futuro para que esté lo más completo posible.
-
-¡Espero que te sirva!
-
-## Autor
-
-**AlejanCodeGF**
-
-- [Linkedin](https://www.linkedin.com/in/alejan-gomez-fernandez/)
-- [Porfolio web]()
-
-## Datos de contacto
-
-**alejan.gomez.fernandez@gmail.com**
+📌 **HTML** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-HTML)\
+🎨 **CSS** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-CSS)\
+💻 **JavaScript** - [Acceder al curso](https://github.com/alejanCodeGF/Curso-Desarrollo-Web/tree/main/Curso-JS)
 
 ---
 
-`>` No sé si hace falta decirlo, pero obviamente lo que esté en el HTML, CSS y JS será público, así que no poner cosas privadas, vaya (ni en comentarios).
+## 👤 Sobre el Autor
 
-## Links interesantes
+**AlejanCodeGF**
 
-[**{Link a un cheatsheet interactivo}**](https://htmlcheatsheet.com/)
+📎 [LinkedIn](https://www.linkedin.com/in/alejan-gomez-fernandez/)\
+🌐 [Portfolio Web](https://alejancodegf.github.io/Portfolio)
 
-## Comentar en el código
+✉️ **Contacto**: [alejan.gomez.fernandez@gmail.com](mailto\:alejan.gomez.fernandez@gmail.com)
+
+---
+
+## Conceptos básicos
+
+```
+Nombrar al archivo de arranque como "index.html". Será el primero que se mostrará
+
+Tipos de comportamiento:
+display block -> Ocupan toda la línea de la web, da igual que el contenido sea menor (<h1>, <p>...)
+display inline -> Ocupan únicamente el contenido que contenga (<span>, <a>...)
+    > Esto se podrá modificar con el estilo en CSS
+
+Atributo booleano (BOOL):
+Aquel que no necesita un valor, su sola presencia significa que está "activado"
+<input type="checkbox" checked> (checked es un atributo, pero no hace falta hacer checked=3)
+
+Enlaces:
+Referencia a otro recurso (página, imagen, archivo, etc.)
+Puede ser local (dentro del proyecto) o externo (hacia otra web) y hay de varios tipos:
+    1. Relativas -> Dentro del mismo sitio (/carpeta/archivo.html)
+    2. Absolutas -> Incluyen el dominio completo (https://ejemplo.com)
+    3. Anclas -> Navegan dentro de la misma página (#seccion)
+    4. Especiales -> Para llamadas telefónicas (tel:123456789) o emails (mailto:correo@ejemplo.com)"""
+```
+
+## Comentar en código
 
 ```
 <!--COMENTARIO-->
 ```
 
-## Teoría antes de empezar
+## Estructura básica de etiqueta
 
 ```
-Al archivo que quieras que arranque la web, le pones el nombre de "index.html"
-    > Es el que mostrará la web primero
-
-Estructura:
-[<etiqueta atributo="valor">contenido</etiqueta>]
-    > Habrá algunos que no necesiten etiqueta de cierre, para esos
-    [<etiqueta atributo="valor" />]
-
-> Algunos dirán que no le pongas el "/", para que quede más limpio
-> Yo lo he hecho teniendo en cuenta el cierre, lo que veas
-
-Display:
-block -> Completan la línea hasta el final del contenedor (h1, h2... p, etc.)
-    > Por más pequeño que sea el texto, no se puede poner nada más a la derecha.
-inline -> Ocupan el contenido únicamente (inputs, etc.)
-
-Links:
-1. Rutas locales (las que están en nuestra carpeta)
-    > "nombre_archivo.html" / "nombre_carpeta/nombre_archivo.html"
-    > ../archivo -> ir a una carpeta anterior (si quieres 2 ../../etc)
-2. Rutas externas (las de fuera de nuestra carpeta)
-    > "https/www...."
-
-> bool (booleano) significa que no hace falta introducir ningún dato para activarlo
-    > Se suele poner por nomenclatura de nombre el mismo atributo
-        > (P.e: <ol reversed = "reversed">, o <video controls = "controls">)
-
-> Algunos dirán que lo pongas vacío (<ol reversed>), que se ve más limpio
+<etiqueta atributo="valor">Contenido</etiqueta>
+    > En la mayoría de casos se necesitará una etiqueta de apertura y otra de cierre, pero habrá casos en los que no (<br>, <img>, <input>...)
+    > A lo largo del cheat sheet verás las que no necesitan cierre con <etiqueta />, aunque se suelen escribir sin la barra
 ```
 
-## Especificar version del HTML
+## Estructura básica de documento HTML
 
 ```
-HTML5 -> <!DOCTYPE HTML>
-HTML4 -> <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-XHTML1 ->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-```
+<!DOCTYPE HTML> <!--Versión del HTML-->
 
-`>` A partir de ahora, todo el código irá rodeado de `<html></html>`
-
-```
 <html>
     <head>
         ...
@@ -90,178 +71,210 @@ XHTML1 ->
 </html>
 ```
 
-`>` Lo que esté tabulado (sin ">"), será un atributo de la etiqueta que tenga encima
-
 ## `<head>`
 
-`>` Aquí van los elementos que no se ven directamente en la web
-
 ```
+Dentro de esta etiqueta irán los elementos que no se ven directamente en la web
+
 <title> -> Añadir título en la pestaña
 <meta> -> Añadir metadatos
 <link> -> Linkear algo (archivo css, icono, etc.)
 ```
 
-### _Metadatos / link_
+### _Metadatos_
 
 ```
-Metadatos -> Información, que describe datos (recursos)
+Metadatos -> Información oculta que describe y optimiza la página para navegadores, buscadores y redes sociales
+
 <meta>
-    charset -> Cambiar la codificación (poder poner tildes y eso)
-        = "utf-8" -> El mas usado para los idiomas europeos
-    name -> Crear una "carpeta" de datos (con "content" lo rellenas)
+    charset -> Cambiar la codificación (poder poner tildes y caracteres especiales (ç,ñ...))
+        = "utf-8" -> El más usado para los idiomas europeos
+    name -> Crear una "carpeta" de datos (y con el atributo "content" la rellenas)
         ="keywords" -> Etiquetas para el SEO, separadas por comas
-        ="description" -> Descripción de la pagina web (entre 70-140 char)
+        ="description" -> Descripción de la página web (entre 70-140 char)
         ="autor" -> Nombre del autor de la web
         ="copyright" -> Poner el nombre de la empresa dueña de los derechos
-            > (P.e: Facebook (meta) tiene instagram)
-        ="robots" -> Hablar con el buscador
+        ="robots" -> Dar instrucciones a los motores de búsqueda
             > Si la web debería ser indexada o no (que aparezca en el buscador)
                 > content = "index" / "noindex"
-            > Si debería dar importancia en el SEO
-            (Le dicen al buscador si debe explorar las páginas a las que llevan o no)
+            > Si los links DENTRO de la web deberían afectar al SEO o no
                 > content = "follow" / "nofollow"
-    content -> De ese name, poner los datos
-        > (P.e: name="keywords" content="harina, pasteles, huevos, lacteos")
+    content -> Especificar los datos del atributo "name"
+        > (P.e: name="keywords" content="HTML, metadato, ejemplo")
+```
+
+### _Link_
+
+```
+Enlazar recursos externos (hojas de estilo, iconos...)
 
 <link>
-    rel -> Qué es lo que linkamos
+    rel -> Que queremos linkear
         ="icon" -> Icono de la pestaña
-            > Importante que tenga formato .ico
         ="stylesheet" -> Archivo de estilo (css)
-    type -> Qué formato tiene
+    type -> Formato del archivo
         ="image/png"
         ="text/css"
-    href -> Link donde esté ese archivo
-```
+    href -> Ubicación del archivo (enlace)
 
-```
 Ejemplos:
-<meta name="description" content="Este es un ejemplo de metadato en HTML">
-<meta name="keywords" content="HTML, metadato, ejemplo">
+    <link rel="icon" type="image/png" href="Logo_web.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+```
 
-<link rel="icon" type="image/png" href="Logo_web.ico">
-<link rel="stylesheet" type="text/css" href="style.css">
+### _Enlazar JavaScript_
+
+```
+<script> -> Enlazar código JavaScript
+    src = "archivo.js" (URL)
+    defer (BOOL) -> Ejecuta el script después de cargar el HTML
+        > Es similar a poner el <script> al final del <body>, pero mejor de esta forma
+    async (BOOL) -> Descarga y ejecuta el script en paralelo sin esperar al HTML
+
+También es posible escribir directamente código, sin enlazar a un archivo externo con "src"
+
+Ejemplo:
+"""
+<script>
+    console.log("Hola, mundo!");
+</script>
+"""
 ```
 
 ## `<body>`
 
-`>` Todos los elementos que se ven
+```
+Dentro de esta etiqueta irán los elementos que se muestran
+```
 
 ### _Textos_
 
 ```
 <hi> -> Añadir títulos (y solo títulos)
     > i = 1,2,...,6 (1 título, 2 subtítulo, 3 subsubtítulo...)
-    > Añadir un unico h1 (por el SEO)
 <p> -> Párrafo de texto
 <hr /> -> Línea de separación
 <br /> -> Salto de línea
 <span> -> Aplicar estilos a un grupo de letras (CSS)
-<a> -> Poner links a webs
-    href = "https://...", o puede ser de la misma web
-        > Para mandar a una parte de la misma web:
-            > Poner al elemento que queramos ir un "id"
-            > href="#nombre_id"
-    href = "tel:123-456-789" -> Al pulsar, llama a ese numero
-    target = "_blank" -> abrirá el link en otra pestaña
-        > Si ponemos "_blank" poner por seguridad rel="noopener noreferrer"
+<strong> -> Resaltar un texto con énfasis (negrita)
+<em> -> Resaltar un texto con énfasis (cursiva)
 <blockquote> -> Para destacar citas largas o textos tomados de otra fuente
-    cite -> Para poner la url en la cual se cita el texto
+    cite -> Para poner el enlace en la cual se cita el texto
+<code> -> Para mostrar fragmentos de código
+<pre> -> Permite mostrar el texto tal cual como lo escribes, respetando espacios y saltos de línea
+```
+
+### _Navegación_
+
+```
+<a> -> Crear enlaces a otras páginas o recursos
+    href = "URL" -> Especifica el destino del enlace
+        > Puede ser una ruta local, externa, ancla o especial
+    target = "_blank" -> Abre el enlace en una nueva pestaña
+        > Si usamos "_blank", agregar rel="noopener noreferrer" por seguridad
 ```
 
 ### _Multimedia_
 
 ```
-<img /> -> Poner una imagen
-    > png, jpg o gif lo aceptan todos los navegadores
-    src = "link" o "imagen" (si está en la misma carpeta "imagen.png")
-    width = ... |
-    height = ...|
-        > Si pones uno de los 2, se escala automáticamente
+<img /> -> Añadir una imagen (png, jpg, gif...)
+    src = "URL" ("imagen.png" en local o enlace externo)
+    width = ... | height = ...
+        > Si defines solo uno, el otro se ajusta automáticamente para mantener la proporción
     alt -> Texto alternativo si no carga la imagen / contenido
-        > VITAL para el SEO
-    title -> Texto que sale cuando pasas el ratón por encima de la imagen
-<video /> -> Poner un vídeo
-    src = "link" o "vídeo"
-        > Debe ser formato vídeo
-    controls (bool)
-        > Nos permite acceder a los controles del vídeo
-        > Lo define el navegador
-        > Si no esta no hacemos nada vaya
-<audio /> -> Poner un audio
-    > Lo mismo que el vídeo vaya
-    > En formato vídeo reproduce el audio
+        > VITAL para el SEO y la accesibilidad
+    title -> Texto que aparece al pasar el cursor sobre la imagen
+
+<video /> -> Insertar un vídeo
+    src = "URL" (ruta local o externa)
+    controls (BOOL) -> Activa los controles del vídeo (reproducir, pausar, volumen, etc.)
+        > Su apariencia depende del navegador
+        > Si no se especifica, el vídeo se reproduce sin controles
+
+<audio /> -> Insertar un audio
+    src = "URL" (ruta local o externa)
+    controls (BOOL) -> Activa los controles de reproducción
+        > Funciona igual que `<video>`, pero reproduce sonido
+```
+
+### _Contenedores y organizar la web_
+
+```
+En HTML se usan contenedores para organizar el contenido de una página en secciones estructuradas
+Cada contenedor forma grupos relacionados, lo que facilita la navegación y el diseño
+
+<div> -> Contenedor genérico sin significado específico
+<header> -> Encabezado de la web (logo, menú, título, etc.)
+    > Normalmente se mantiene igual en todas las páginas del sitio
+<nav> -> Barra de navegación (menú, buscador, enlaces, etc.)
+    > Suele estar dentro del <header>
+<main> -> Contenido principal de la web
+    > Ejemplo: En un periódico, aquí irían las noticias
+<article> -> Bloques de contenido independiente dentro del <main>
+    > Ejemplo: Una noticia, un post de blog, un producto en una tienda
+    > Para SEO: Debe incluir títulos (<h1>-<h6>) y texto (<p>)
+<section> -> Agrupa contenido dentro de <article> o <main>
+    > Ejemplo: En una noticia, puede haber una sección para cada parte del artículo
+<figure> -> Para imágenes, gráficos o contenido multimedia con su descripción
+    > No es lo mismo que <section>, se usa para elementos visuales
+<aside> -> Contenido relacionado pero no esencial
+    > Ejemplo: Una barra lateral con enlaces o publicidad
+<footer> -> Pie de página (copyright, contacto, redes sociales, etc.)
 ```
 
 ### _Formularios_
 
 ```
-<form> -> Rodeando el formulario de la info que quieras enviar
+<form> -> Contiene el formulario para enviar la información
     action = "/formulario.php" (Donde se enviará el formulario)
-    method -> Enviar la info del formulario
+    method -> Método de envío de datos
         = "GET" -> Parámetros en la URL (obtener información)
-            > Hay tope de información, se suele usar para navegadores
-        = "POST" -> No hay limite de información, el mas usado (cambiar información)
-        > Ningún método es seguro
-<label /> -> Texto, que si haces click enfoca la atención al input (para que puedas empezar a escribir p.e.)
-            > Se usa para informar que hace el input ("Numero de telefono", "Nombre completo", etc.)
-            > Mejora la accesibilidad
-    for -> id del input asociado
-<input /> -> Para introducir la info (texto, checkbox, etc.)
-    id -> Valor unico del elemento
-    name -> "key" del json al enviar el formulario
-        > Muy importante para enviar los datos
-        > (P.e:{"Nombre":"Alejandro", "Edad":"..."})
-    value -> Valor por defecto
-        > Se mantiene, no como el placeholder
-    placeholder -> Texto de ayuda
-        > Cuando vayas a escribir desaparece ese texto
-    type
-        = "text" (Por defecto) -> Introducir texto
-        = "email" -> Solo permite enviar si tiene formato mail (aaa@bbb.ccc)
-            > Mejor hacerlo por el backend, pueden inventarse el mail
-        = "number" -> No permite escribir texto
-            > Flecha arriba y abajo para sumar y restar numeros
-        = "password" -> Cuando escriba salen los ***
-        = "radio" -> De varias opciones poder elegir solo 1
-            > Poner el mismo "name", para que estén relacionadas
-            checked (bool) -> La opción seleccionada por defecto
-        = "checkbox" -> De varias opciones poder elegir las que quieras
-            > Poner el mismo "name", para que estén relacionadas
-            > Si no pones valor, por defecto será "true" / "false" (checked o no checked)
-            checked (bool) -> La opción/es seleccionadas por defecto
-        = "range" -> Seleccionar dentro de una barra (rango) un numero entre "a" y "b"
-            > (P.e: La barra de Instagram, para opinar si te gusta mas o menos)
-            min (numero minimo)
-            max (numero maximo)
-        = "date" -> Fecha
-        = "time" -> Hora
+            > Tiene un limite, se usa para búsquedas y navegadores
+        = "POST" -> No tiene límite de datos (cambiar información), usado para formularios
+        > Nota: Ningún método es seguro por sí solo
+<label /> -> Asocia un texto con un campo de formulario y mejora la accesibilidad
+    for -> Vincula el label con el id de un input
+<input /> -> Permite introducir información (texto, checkbox, etc.)
+    id -> Identificador único del elemento
+    name -> Clave en el JSON enviado ({"Nombre":"Alejandro", "Edad":"..."})
+    value -> Valor por defecto del campo, se mantiene escrito, no como el placeholder
+    placeholder -> Texto de ayuda, desaparece al escribir
+    type -> Define el tipo de input
+        = "text" (Por defecto) -> Campo de texto
+        = "email" -> Requiere formato "aaa@bbb.ccc" (validación mejor en backend)
+        = "number" -> Solo números (con flechas para ajustar valores)
+        = "password" -> Oculta el texto ingresado, y muestra "***"
+        = "radio" -> Permite seleccionar solo una única opción (poner el mismo "name" agrupa las opciones)
+            checked (BOOL) -> La opción seleccionada por defecto
+        = "checkbox" -> Permite seleccionar múltiples opciones (poner el mismo "name" agrupa las opciones)
+            > Si no se especifica value, su valor es "true"/"false"
+            checked (BOOL) -> La opción/es seleccionadas por defecto
+        = "range" -> Permite seleccionar un valor dentro de un rango, entre un "min" y un "max"
+        = "date" -> Seleccionar fecha
+        = "time" -> Seleccionar hora
         = "color" -> Seleccionar un color
-    required (bool) -> Si queremos que un campo sea obligatorio responder
-<select> -> Para que el usuario seleccione una opción de entre una lista
-            > Usado sobretodo si son listas bastante grandes
-    name -> Igual que el input
+    required (BOOL) -> Hace obligatorio introducir un campo
+<select> -> Desplegable para seleccionar una opción de una lista, sobre todo en listas grandes
+    name -> Similar al <input>
 <option> -> Irá dentro del <select></select>, para poner la lista de opciones
-    value -> Valor de la selección. Es el nombre que enviará al servidor (perro, gato, rojo, verde...)
-    selected (bool) -> Opción seleccionada por defecto
+    value -> Valor de la selección. El que se envia al servidor (perro, gato, etc.)
+    selected (BOOL) -> Opción seleccionada por defecto
 <optgroup> -> Si quieres separar el <select> con las opciones en varios grupos
-            > (P.e: Select: Ropa -> Calcetines, pantalones... Tallaje -> XL, L...)
-    label -> Etiqueta para cada grupo de <optgroup> (Con el ejemplo de arriba, "Ropa" y "Tallaje")
-<textarea> -> Muy parecido al input text, pero un poco diferente
+    > (P.e: Select: 1.Ropa -> Calcetines, pantalones... 2.Tallaje -> XL, L...)
+    label -> Etiqueta del grupo (Con el ejemplo de arriba, "Ropa" y "Tallaje")
+<textarea> -> Muy parecido al input text, pero con algunas diferencias
     id... (...muy parecido a input...)
     ...
-    cols = "número de columnas" (entiendo que char)
-    row = "número de filas"
-    readonly (bool) -> No se podrá borrar el texto ni escribir encima
-    > No se usa "value", como el input. Para hacerlo poner el texto entre las etiquetas
-<button> -> Un botón, vaya
-    > Se puede poner texto al botón, incluso una imagen (entre las etiquetas)
+    cols = "Número de columnas" (caracteres)
+    row = "Número de filas"
+    readonly (BOOL) -> No permite editar el texto
+    > Nota: No usa value, se escribe entre las etiquetas.
+<button> -> Botón con texto o imagen
     type
-        = "button" Para que el js haga cosas
-        = "reset" Dejar los valores del form por defecto
-        = "submit" Enviar los datos del form
-<fieldset> -> Para organizar, agrupando elementos del form en partes
+        = "button" -> Para usarlo con JavaScript
+        = "reset" -> Restablece valores del formulario
+        = "submit" -> Envía los datos del formulario
+<fieldset> -> Para organizar, agrupando elementos del formulario en partes
 <legend> -> Dar a cada <fieldset> un encabezado, o una descripción del grupo
 ```
 
@@ -270,97 +283,61 @@ Ejemplos:
 ```
 <ul> -> Lista no ordenada
 <ol> -> Lista ordenada (1,2,3...)
-    start -> Número desde donde quieres empezar la lista
-        > Los siguientes lo continuarán
-    type -> Tipo de ordenación
+    start -> Número de inicio (default = 1)
+    type -> Tipo de numeración
         = "A" (A,B,C,D...)
         = "a" (a,b,c,d...)
         = "I" (I,II,III,IV...)
         = "i" (i,ii,iii,iv...)
-    reversed (bool) -> Enumera al revés, el último elemento será el primer numero
+    reversed (BOOL) -> Enumera en orden inverso
 <li> -> Cada elemento de la lista irá rodeado de esta etiqueta
 
-<dl> -> Lista de descripción
-    > (Rollo elemento1-descripción1, elemento2-descripción2, etc.)
+<dl> -> Lista de descripción (elemento1-descripción1, elemento2-descripción2...)
 <dt> -> Cada elemento de la lista irá rodeado de esta etiqueta
 <dd> -> Cada descripción del elemento de la lista irá rodeado de esta etiqueta
 
-> Se pueden añadir listas dentro de listas
+> Nota: Se pueden anidar listas dentro de listas
 ```
 
 ### _Tablas_
 
 ```
-Las tablas se organiza por filas y elementos
+Las tablas se organizan por filas y elementos
 
+Estructura básica:
+"""
+<table>
+  <tr>
+    <th>Encabezado 1</th>
+    <th>Encabezado 2</th>
+  </tr>
+  <tr>
+    <td>Dato 1</td>
+    <td>Dato 2</td>
+  </tr>
+</table>
+"""
+
+Elementos principales:
 <table> -> Rodeando la tabla
-<tr> -> Table row, fila de la tabla
-<td> -> Celdas
-    > Elementos que ponemos dentro de las filas <tr>
-    colspan = "num de columnas"
-        > Juntar varias columnas para poner 1 elemento
-    rowspan = "num de filas"
-        > Juntar varias filas para poner 1 elemento
-<th> -> Como td, pero para poner los apartados de la tabla (encabezado)
-<caption> -> Comentario arriba de la tabla
-    > (P.e: nombre de la tabla)
+<tr> -> "Table row", fila de la tabla
+<td> -> Celdas o elementos
+    colspan = "n" (Juntar "n" columnas como un unico elemento)
+    rowspan = "n" (Juntar "n" filas como un unico elemento)
+<th> -> Parecido a td, para el encabezado de la tabla (los apartados)
+<caption> -> Descripción de la tabla y su contenido
+
+Agrupación de columnas:
 <colgroup> -> Seleccionar columnas de la tabla (Ponerlo dentro de <table>)
-    <col /> -> Cada "col" es una columna
-        > (P.e: Si quieres poner un estilo en la 2a columna, poner 1 <col /> vacia, y la siguiente con el estilo)
-        span = "num de columnas"
-            > Juntar varias columnas para darle un mismo estilo, o para dejarlas vacias, etc.
+    <col /> -> Cada "col" es una columna (Si quieres poner un estilo en la 2a columna, poner 1 <col /> vacia, y la siguiente con el estilo)
+        span = "n" (Juntar "n" columnas para darle el mismo estilo a todas)
 
-Para organizar la tabla usar estos 3 grupos:
-<thead> -> Sección de encabezado
-    > (P.e: nombre, edad... (ponerlo con <th>))
+Organización de la tabla (Secciones):
+<thead> -> Sección de encabezado (nombre, edad... (ponerlo con <th>))
 <tbody> -> Elementos de la tabla (datos)
-<tfoot> -> Representar información resumen
-    > (P.e: mediana, valor maximo, etc.)
+<tfoot> -> Información resumen (mediana, valor máximo...)
 
-Para hacer la tabla mas accesible para usuarios con discapacidad visual, haremos estas reglas:
-    - Usar los elementos <th> para los nombres de encabezados
+Reglas de mejora para la accesibilidad:
+    - Utilizar los elementos <th> para los nombres de encabezados
     - En estos <th> decir a que hacen referencia (col/row) con el atributo "scope"
-        > Si usas "span" y juntas varias columnas o filas, debes usar "colgroup" o "rowgroup"
-        > OTRA ALTERNATIVA es usar los "id" junto el atributo "headers" (mas ineficiente pero mas preciso)
-            > Mucho texto, busca en Google si es necesario
-```
-
-```
-> Ejemplo bastante completo en la carpeta
-```
-
-### _Organizar la web_
-
-```
-Para organizar la web lo pondremos por "grupos"
-Cada grupo tiene elementos dentro, de forma organizada
-    > Separar y agrupar contenido para organizar mejor
-
-<div> -> El básico, contenedor normal genérico
-<header> -> Contenedor de arriba de la web
-    > Siempre se mantiene igual mientras navegas por otros enlaces de la web
-<nav> -> Navegador (buscador, cuenta, logo, etc)
-    > Normalmente dentro del header
-<main> -> Contenido principal de la web
-    > (P.e: Donde se verán las noticias, si es un periodico)
-<article> -> Separar lo del main por articles
-    > (P.e: Las noticias individuales)
-    > 100% posicionamiento
-        > Obligatorio rellenarlo con etiquetas <h> y etiquetas <p>
-<section> -> Separar el contenido del article
-    > No se si es lo mismo que <figure>
-        > Hay sitios que lo veo con esa etiqueta nose
-    > 100% posicionamiento
-        > Obligatorio rellenarlo con etiquetas <h> y etiquetas <p>
-<aside> -> Información relacionada
-<footer> -> Pie de página (copyright, contactanos, links relacionados, etc.)
-```
-
-### _Enlazar JavaScript_
-
-```
-Normalmente va al final del <body>, es más visible
-
-<script> -> Para añadir el archivo de JS
-    src = "archivo.js"
 ```
